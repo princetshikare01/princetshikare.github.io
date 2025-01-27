@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prince Tshikare's portfolio showcasing his journey as an aspiring AI engineer.">
+    <meta name="keywords" content="AI engineer, portfolio, Prince Tshikare, technology, innovation">
+    <title>Prince Tshikare - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" defer></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Prince Tshikare</div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <video autoplay muted loop playsinline id="myVideo">
+            <source src="images/Video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Aspiring AI Engineer</h1>
+            <p>Turning ideas into innovation.</p>
+            <a href="#projects" class="cta-button">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/Prince.jpg" alt="Prince Tshikare" loading="lazy">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>From the rhythm of dance to the precision of coding, my journey has been one of discovery and growth. I've transitioned from being a professional dancer to an aspiring AI Engineer, blending creativity and technical expertise to solve complex problems. My mission is to create solutions that empower communities and inspire innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" onclick="toggleDetails(this)">
+                <img src="images/source-4280758.jpg" alt="Project 1" class="project-image">
+                <h3>AI-Powered Crop Health Analyzer</h3>
+                <div class="project-details">
+                    <p>An AI tool that identifies crop diseases and provides tailored solutions to farmers. Built using Python, Machine Learning, and Google Cloud.</p>
+                </div>
+            </div>
+            <div class="project-card" onclick="toggleDetails(this)">
+                <img src="images/artificial-8264664.jpg" alt="Project 2" class="project-image">
+                <h3>Generative AI Art Creator</h3>
+                <div class="project-details">
+                    <p>An app that generates unique artwork based on user prompts, showcasing creativity through AI. Built using Python and TensorFlow.</p>
+                </div>
+            </div>
+            <div class="project-card" onclick="toggleDetails(this)">
+                <img src="images/robot-7720802.jpg" alt="Project 3" class="project-image">
+                <h3>Personalized Chatbot for Customer Support</h3>
+                <div class="project-details">
+                    <p>A chatbot trained to handle FAQs and offer tailored support for businesses. Deployed on Google Vertex AI.</p>
+                </div>
+            </div>
+            <div class="project-card" onclick="toggleDetails(this)">
+                <img src="images/data-4570804.jpg" alt="Project 4" class="project-image">
+                <h3>Data Insights Dashboard</h3>
+                <div class="project-details">
+                    <p>An interactive Power BI dashboard that visualizes business trends and provides actionable insights.</p>
+                </div>
+            </div>
+            <div class="project-card" onclick="toggleDetails(this)">
+                <img src="images/mockup-654585.jpg" alt="Project 5" class="project-image">
+                <h3>Futuristic Portfolio Website</h3>
+                <div class="project-details">
+                    <p>A modern, user-friendly portfolio website showcasing my journey, skills, and projects. Built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Skills and Technologies</h2>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="90"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="80"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>TensorFlow</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="85"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Google Cloud</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="75"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Power BI</h3>
+                <div class="progress-bar">
+                    <div class="progress" data-skill-level="70"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="goals" id="goals">
+        <h2>Goals and Aspirations</h2>
+        <div class="goal-timeline">
+            <div class="goal-item">
+                <h3>AI Architect</h3>
+                <p>To become an AI Architect, specializing in designing innovative AI solutions for global challenges.</p>
+            </div>
+            <div class="goal-item">
+                <h3>AI Automation</h3>
+                <p>To work in AI Automation, building systems that enhance productivity and efficiency.</p>
+            </div>
+            <div class="goal-item">
+                <h3>Data Scientist</h3>
+                <p>To pursue a career as a Data Scientist, extracting insights to drive meaningful decisions.</p>
+            </div>
+            <div class="goal-item">
+                <h3>Generative AI</h3>
+                <p>To lead in Generative AI, creating transformative applications for industries.</p>
+            </div>
+            <div class="goal-item">
+                <h3>Tech Company</h3>
+                <p>To establish my own tech company, focusing on sustainability, innovation, and global impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial-card">
+                <p>"Prince is an exceptional AI engineer with a keen eye for detail and a passion for innovation."</p>
+                <p>- John Doe, Colleague</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"His work on AI-powered solutions has significantly improved our productivity."</p>
+                <p>- Jane Smith, Client</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Prince's expertise in AI has been invaluable to our team."</p>
+                <p>- Bob Johnson, Manager</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"I highly recommend Prince for any AI-related projects."</p>
+                <p>- Alice Brown, Partner</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Prince's dedication and skills are truly impressive."</p>
+                <p>- Charlie Green, Mentor</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Working with Prince has been a pleasure and a learning experience."</p>
+                <p>- David White, Colleague</p>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-prev" onclick="prevTestimonial()">◀</button>
+            <button class="carousel-next" onclick="nextTestimonial()">▶</button>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <h2>Latest Articles</h2>
+        <div class="blog-card">
+            <h3>The Future of AI in Healthcare</h3>
+            <p>Exploring the latest advancements in AI and their impact on the healthcare industry.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-card">
+            <h3>AI and Ethics: Navigating the Challenges</h3>
+            <p>Discussing the ethical considerations and challenges in the field of AI.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form" onsubmit="return handleSubmit(event);">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+            <div id="success-message" style="display: none;">Thank you for your message!</div>
+        </form>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Prince Tshikare. All rights reserved.</p>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
